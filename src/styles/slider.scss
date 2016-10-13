@@ -1,0 +1,109 @@
+// 预加载
+#preload{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+
+	.iconfont{
+		width: 50px;
+		height: 50px;
+		font-size: 50px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		transform-origin: 25px 30px;
+		animation: myrotate 2s linear infinite;
+	}
+}
+@keyframes myrotate{
+	from{
+		transform: rotate(0deg)
+	}
+	to{
+		transform: rotate(360deg)
+	}
+}
+
+// swiper
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 0;
+}
+.swiper-pagination{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	// bottom: 0!important;
+}
+.swiper-pagination-bullet{
+	height: 50px;
+	line-height: 20px;
+	border-radius: 0;
+    flex-grow: 1;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-item: center;
+    font-size: 14px;
+
+    .iconfont{
+		font-size: 20px;
+    }
+}
+// IScroll
+#scroll-wrap {
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	bottom: 48px;
+	left: 0;
+	width: 100%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+}
+
+#scroller li {
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	background-color: #fafafa;
+	font-size: 14px;
+}
